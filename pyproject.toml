@@ -1,0 +1,30 @@
+[project]
+name = "modcalculus"
+version = "0.1"
+authors = [{name="Pierre-Loïc Méliot", email="pierreloic.meliot@gmail.com"}]
+description = "A package to manipulate cumulants of statistics of random objects"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+keywords = ["cumulants", "combinatorics", "probability", "mathematics"]
+license = "MIT"
+license-files = ["LICENSE"]
+
+[project.urls]
+Homepage = "https://github.com/darkxan771/modphi"
+
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff]
+line-length = 80
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "B", "I", "UP"]
+
+[tool.ruff.format]
+quote-style = "double"
